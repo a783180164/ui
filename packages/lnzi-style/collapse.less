@@ -1,0 +1,43 @@
+.lnzi-collapse-item {
+  position: relative;
+  background-color: red;
+  &--title {
+    &:after {
+      visibility: hidden;
+    }
+
+    .lnzi-cell--title {
+      width: auto;
+      flex: 1;
+    }
+
+    .lnzi-cell--right-icon {
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+  }
+
+  &--wrapper {
+    overflow: hidden;
+    will-change: height;
+    -webkit-animation: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out
+  }
+
+  &--content {
+    font-size: 13px;
+    color: #666;
+    padding: 15px;
+  }
+}
+
+.lnzi-collapse-item--expanded {
+  .lnzi-collapse-item--title {
+    .lnzi-cell--right-icon{
+      -webkit-transform: rotate(-90deg);
+      transform: totate(-90deg)
+    }
+  }
+}

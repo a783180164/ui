@@ -1,0 +1,55 @@
+.lnzi-field {
+
+  .lnzi-cell--title {
+    width: 90px;
+    flex: 0 0 90px;
+  }
+
+  &--textarea {
+    height: 90px;
+  }
+
+  &--body {
+    position: relative;
+    .lnzi-field--control {
+      width: 100%;
+      border: none;
+      &--left {
+        text-align: left;
+      }
+      &--right {
+        text-align: right;
+      }
+      &--center {
+        text-align: center
+      }
+    }
+    .lnzi-field--clear {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: rgb(201, 201, 201);
+      padding: 0 5px;
+    }
+  }
+
+  &--clearable {
+    padding-right: 26px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  &--center {
+    align-items: center;
+  }
+  &--top {
+    align-items: flex-start;
+  }
+  &--bottom {
+    align-items: flex-end;
+  }
+}

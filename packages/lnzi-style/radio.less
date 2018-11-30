@@ -1,0 +1,51 @@
+.lnzi-radio {
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+
+  &--disabled {
+    .lnzi-radio--control {
+      color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+  }
+
+  &--control, &--label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--label {
+    line-height: 20px;
+    margin-left: 10px;
+  }
+
+  &--control {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #b8b8b8;
+    border-radius: 50%;
+    color: #FF605A;
+    font-size: 12px;
+
+    .lnzi-icon {
+      font-size: 14px;
+    }
+  }
+
+  &--noborder {
+    border: none;
+    font-size: 14px;
+  }
+
+  &--input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+  }
+}

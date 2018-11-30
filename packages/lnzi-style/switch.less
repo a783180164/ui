@@ -1,0 +1,27 @@
+.lnzi-switch {
+  position: relative;
+  width: 2em;
+  height: 1em;
+  border-radius: 3.2em;
+  background-color: #E2E2E2;
+
+  &--node {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 0.93em;
+    height: 0.94em;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  &--on &--node{
+    transform: translateX(1em);
+  }
+
+  &--disabled {
+    opacity: 0.4;
+  }
+
+}

@@ -1,0 +1,73 @@
+.lnzi-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 85%;
+  font-size: 16px;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: 0.3s;
+
+  &--header {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  &--message {
+    line-height: 1.5;
+    padding: 15px 20px;
+    text-align: left;
+
+    &--has-title {
+      color: #999;
+      font-size: 14px;
+    }
+  }
+
+  &--footer {
+    .lnzi-button {
+      border: none;
+      &:active {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  &--footer--buttons {
+    display: flex;
+    .lnzi-dialog--confirm {
+      border-right: 1px solid #f2f4f5;
+      .lnzi-button--text {
+        color: #333;
+      }
+    }
+  }
+
+  &.lnzi-dialog--spacial {
+    .lnzi-dialog--header {
+      height: 50px;
+      line-height: 50px;
+      padding: 0;
+      color: #fff;
+    }
+    .lnzi-dialog--message {
+      padding: 15px;
+    }
+    .lnzi-button {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+
+  &-bounce-enter {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.9);
+  }
+
+  &-bounce-leave-active {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) scale(0.9);
+  }
+}

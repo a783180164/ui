@@ -1,0 +1,41 @@
+.lnzi-checkbox {
+
+
+  &--icon {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    font-size: 14px;
+    border: 1px solid #B8B8B8;
+
+    &--round {
+      border-radius: 50%;
+    }
+
+    .lnzi-icon {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      font-size: 12px;
+      color: #fff;
+      display: none;
+    }
+
+    &--checked {
+      border: none;
+      font-size: 16px;
+      background-color: #FF605A;
+      &.lnzi-checkbox--icon--disabled {
+        background-color: #e5e5e5;
+      }
+      .lnzi-icon {
+        display: block;
+      }
+    }
+
+    &--disabled {
+      border-color: #e5e5e5;
+    }
+  }
+}
